@@ -8,27 +8,37 @@ import Category from "./components/categorys.js";
 import SpesCategory from "./components/spesCategory.js";
 
 function App() {
-  return(
-  <>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={
-      <>
-        <Slider />
-        <Category/>
-        <ProductsList/>
-      </>
-      }
-      />
-      <Route path="about" element={<About/>} />
-      <Route path="product/:productId" element={<ProductDetails/>} />
-      <Route path="category/:categoryName" element={<>
-        <Slider />
-        <SpesCategory/>
-        </>} />
-    </Routes>
-  </>
-  )
+  return (
+    <>
+      <Navbar />
+      <Slider />
+      <Category />
+      <ProductsList />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Slider />
+              <Category />
+              <ProductsList />
+            </>
+          }
+        />
+        <Route path="about" element={<About />} />
+        <Route path="product/:productId" element={<ProductDetails />} />
+        <Route
+          path="category/:categoryName"
+          element={
+            <>
+              <Slider />
+              <SpesCategory />
+            </>
+          }
+        />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
