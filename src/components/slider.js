@@ -9,7 +9,7 @@ function Slider(){
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="https://elogic.co/wp-content/uploads/2020/10/Depositphotos_190330960_l-2015-1.jpg"
+                src="https://wallpaperaccess.com/full/2593208.jpg"
                 className="d-block w-100 height-400"
                 alt="..."
               />
