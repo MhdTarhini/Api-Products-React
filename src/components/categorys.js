@@ -13,12 +13,12 @@ function Category() {
     <>
       <div className="container text-center">
         <div className="row">
-          {category.map((product, index) => {
+          {category.map((product) => {
             return (
               <Link
                 to={`category/${product}`}
                 className="col category"
-                key={product.title}>
+                key={product}>
                 {product}
               </Link>
             );

@@ -9,7 +9,7 @@ function Slider(){
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="https://wallpaperaccess.com/full/2593208.jpg"
+                src="https://media.istockphoto.com/id/1206800961/photo/online-shopping-and-payment-man-using-tablet-with-shopping-cart-icon-digital-marketing.jpg?s=612x612&w=0&k=20&c=qG_9JB9ll4P5to97_HVxzMqhhzF0Gi1nWM_hNeiotbk="
                 className="d-block w-100 height-400"
                 alt="..."
               />
