@@ -10,7 +10,7 @@ function Product (props){
         <img src={product.image} className="card-img-top img-pro" alt="..." />
         <div className="card-body pro-text">
           <h5 className="card-title">{product.title}</h5>
-          <p className="card-text hhh " id="content">
+          <p className="card-text description " id="content">
             {product.description}
           </p>
           <p>Price: {product.price}$</p>
