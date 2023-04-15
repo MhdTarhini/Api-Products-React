@@ -4,8 +4,8 @@ import Slider from "./components/slider.js";
 import { Routes,Route } from "react-router-dom";
 import About from "./components/About.js";
 import ProductDetails from "./components/productDetails.js";
-import Category from "./components/categorys.js";
-import SpesCategory from "./components/spesCategory.js";
+import Category from "./components/categories.js";
+import SpecificCategory from "./components/SpecificCategory.js";
 
 function App() {
   return (
@@ -13,14 +13,14 @@ function App() {
       <Navbar />
       <Slider />
       <Category />
-      <ProductsList />
+      {/* <ProductsList /> */}
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <Slider />
-              <Category />
+              {/* <Slider />
+              <Category /> */}
               <ProductsList />
             </>
           }
@@ -31,8 +31,8 @@ function App() {
           path="category/:categoryName"
           element={
             <>
-              <Slider />
-              <SpesCategory />
+              {/* <Slider /> */}
+              <SpecificCategory />
             </>
           }
         />
