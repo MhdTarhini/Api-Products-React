@@ -6,7 +6,7 @@ function Product (props){
 
   return (
     <>
-      <div className="card" style={{ height: "500px", width: "300px" }}>
+      <div className="card" style={{marginBottom:"10px"}} >
         <img src={product.image} className="card-img-top img-pro" alt="..." />
         <div className="card-body pro-text">
           <h5 className="card-title">{product.title}</h5>

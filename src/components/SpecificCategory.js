@@ -31,7 +31,7 @@ function SpecificCategory() {
             // map into specificCategory state
             SpecificCategory.map((product) => {
               return (
-                <div className="col-3 m-4 product" key={product.index}>
+                <div className="col mb-10" key={product.index}>
                   <Product product={product} showButton={true} />
                 </div>
               );
