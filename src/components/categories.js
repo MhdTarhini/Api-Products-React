@@ -13,7 +13,9 @@ function Category() {
 
   return (
     <>
-      <div className="container text-center">
+    <div style={{backgroundColor: "#e8e8ff"}} className="p-2">
+    <h2 className="text-center p-2" >Categorys</h2>
+      <div className="container text-center" style={{marginBottom:"10px"}}>
         <div className="row">
           {
             // Map into Category state
@@ -31,6 +33,7 @@ function Category() {
           }
         </div>
       </div>
+    </div>
     </>
   );
 }

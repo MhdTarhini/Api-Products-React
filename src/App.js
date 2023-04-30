@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar />
       <Slider />
-      <Category />
+        <Category />
       {/* <ProductsList /> */}
       <Routes>
         <Route
@@ -26,14 +26,11 @@ function App() {
           }
         />
         <Route path="about" element={<About />} />
-        <Route path="product/:productId" element={<ProductDetails />} />
+        <Route path="product/:productId" element={ <ProductDetails />} />
         <Route
           path="category/:categoryName"
           element={
-            <>
-              {/* <Slider /> */}
               <SpecificCategory />
-            </>
           }
         />
       </Routes>

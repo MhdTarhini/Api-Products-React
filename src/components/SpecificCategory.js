@@ -14,24 +14,30 @@ function SpecificCategory() {
   }, [param.categoryName]);
   return (
     <>
-      <div className="container">
+      <div className="container" >
+        <hr/>
+
         <div
           style={{
             textAlign: "center",
             fontSize: "30px",
             fontStyle: "italic",
+            margin:"10px"
           }}>
+          <u>
           {
             // category title upper case
             param.categoryName.toUpperCase()
           }
+          </u>
         </div>
+        <hr/>
         <div className="row">
           {
             // map into specificCategory state
             SpecificCategory.map((product) => {
               return (
-                <div className="col mb-10" key={product.index}>
+                <div className="col" key={product.index}>
                   <Product product={product} showButton={true} />
                 </div>
               );
